@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>INSY 341 Group 2 Project Ingredients to Recipe App</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body
+    data-gr-c-s-loaded="true"
+    background="https://cdn.pixabay.com/photo/2017/10/22/21/34/knife-2879372_960_720.jpg"
+  >
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCGH3zSNTZwRihAf0LvIuiJXiQlE7twdIs",
+        authDomain: "g2cookapp.firebaseapp.com",
+        databaseURL: "https://g2cookapp.firebaseio.com",
+        projectId: "g2cookapp",
+        storageBucket: "g2cookapp.appspot.com",
+        messagingSenderId: "972446916588",
+        appId: "1:972446916588:web:baa59c7447ee9b158e6ac9"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <p class="title">
+      INSY 341-Group 2:<br />
+      Grant Keith<br />Benjamin Maruani<br />Dante Chiesa<br />Yefang Zhong
+    </p>
+    <br />
+
+    <h1 class="instruction">
+      Your experience on CookG2 will be really simple and divided in 2 easy
+      steps:<br /><br />
+      1. You enter the main ingredient you would like to use <br />
+      2. You choose from a list of recipes and can filter by style, amount of
+      time, and difficulty<br />
+    </h1>
+    <br />
+    <div>
+      <h2 class="instruction">
+        If you are willing to find a recipe for your next meal then start the
+        process by clicking the button below:
+      </h2>
+    </div>
+    <div style="text-align:center">
+      <a href="ingredients.html"> <button class="button">Start</button></a>
+    </div>
+    <div>
+      <h2 class="instruction">
+        If you would like to create your own recipe and save it for later use, click the button below!
+      </h2>
+
+      <div style="text-align:center">
+        <a href="newRecipes.html">
+          <button class="button">Start</button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

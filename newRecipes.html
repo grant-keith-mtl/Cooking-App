@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>New Recipe</title>
+    <link rel="stylesheet" href="/newRecipes.css">
+    <script src="newRecipes.js"></script>
+    <script src="newRecipes_test.js"></script>
+  </head>
+  <body background="https://cdn.hipwallpaper.com/i/0/68/OG1FLx.jpg">
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCGH3zSNTZwRihAf0LvIuiJXiQlE7twdIs",
+    authDomain: "g2cookapp.firebaseapp.com",
+    databaseURL: "https://g2cookapp.firebaseio.com",
+    projectId: "g2cookapp",
+    storageBucket: "g2cookapp.appspot.com",
+    messagingSenderId: "972446916588",
+    appId: "1:972446916588:web:baa59c7447ee9b158e6ac9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+      <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <p class="title">
+    <p class="title">
+      Enter a New Recipe:
+    </p>
+    <div class="instruction">
+      <label for="main_ingredient">Enter Main Ingredient:</label>
+      <br><br>
+          <select id="main_ingredient_list" class="detail">
+            <option value="Chicken">Chicken</option>
+            <option value="Beef">Beef</option>
+            <option value="Lamb">Lamb</option>
+            <option value="Fish">Fish</option>
+            <option value="Tofu">Tofu</option>
+            <option value="Veggies">Vegetables</option>
+          </select> 
+      <p class="instruction">
+        Enter Recipe Name:
+      </p>
+      <input type="text" id="name" class="input">
+      <p>
+        Enter Ingredients with Amounts Separated by Commas:
+      </p>
+      <input type="text" id="ingredients">
+      <br><br>
+      <label for="time">Enter Time:</label>
+      <br><br>
+          <select id="time" class="detail">
+            <option value="< 15 minutes">&#60 15 minutes</option>
+            <option value="15-30 minutes">15-30 minutes</option>
+            <option value="30-60 minutes">30-60 minutes</option>
+            <option value="60+ minutes">60+ minutes</option>
+          </select> 
+      <br><br>
+      <label for="difficulty">Enter Difficulty:</label>
+      <br><br>
+          <select id="difficulty" class="detail">
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+          </select> 
+      <p class="instruction">
+        Enter the Recipe:
+      </p>
+      <textarea row="2" col="25" id="recipe" class="detail"></textarea>
+      <br><br>
+      <p>
+        Enter a URL to a picture of the delicious recipe!
+      </p>
+      <input type="text" id="recipePicture">
+      <br><br>
+      <p id="recipe_added" class="congrats" style="display:none;">Congrats You Added a Recipe!!</p>
+      <button id="create_recipe" onclick="main()">
+        Enter
+      </button>
+    </div>
+  </body>
+</html>

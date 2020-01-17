@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<title>INSY 341 Group 2 Project Ingredients to Recipe App</title>
+    <link rel="stylesheet" href="/ingredients.css">
+    <script src="/ingredients.js"></script>
+  </head>
+  <body data-gr-c-s-loaded="true" background="https://cdn.glitch.com/ab356fcb-4efa-4c12-85c2-3ec0c7990b97%2Fstep1.jpg?v=1575325702865">
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCGH3zSNTZwRihAf0LvIuiJXiQlE7twdIs",
+    authDomain: "g2cookapp.firebaseapp.com",
+    databaseURL: "https://g2cookapp.firebaseio.com",
+    projectId: "g2cookapp",
+    storageBucket: "g2cookapp.appspot.com",
+    messagingSenderId: "972446916588",
+    appId: "1:972446916588:web:baa59c7447ee9b158e6ac9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+      <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <h1 class="title">
+      Step 1: Main Ingredient
+    </h1>
+    <p>
+     <div>
+       
+        <br>
+          <label for="ingredients" class="detail">What would you like your main ingredient to be?</label>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+          <select id="ingredients" >
+            <option value="Chicken">Chicken</option>
+            <option value="Beef">Beef</option>
+            <option value="Lamb">Lamb</option>
+            <option value="Fish">Fish</option>
+            <option value="Tofu">Tofu</option>
+            <option value="Vegetables">Vegetables</option>
+          </select> 
+          
+      </div>
+    <br>
+    <br>
+    <br>
+    
+    </p>
+    <p class="instruction">Once you have selected your main ingredient, click <br> the button below to get redirected to the recipes you matched:</p>
+  <button id="button" class="button" onclick="main()">Submit</button>
+    <div >
+      <br><br>
+    </div>
+    <div id ="recipes" class="instruction" style="display: none;">
+    <h1 class="appname">Matching Recipes</h1>
+    <h2>Sort By:</h2>
+    <label for="time">Time</label>
+        <br><br>
+            <select id="time" class="time" onchange="main()">
+              <option value="All">All</option>
+              <option value="< 15 minutes">&#60 15 minutes</option>
+              <option value="15-30 minutes">15-30 minutes</option>
+              <option value="30-60 minutes">30-60 minutes</option>
+              <option value="60+ minutes">60+ minutes</option>
+            </select>
+    <br><br>
+    <label for="difficulty">Difficulty</label>
+    <br><br>
+            <select id="difficulty" class="difficulty" onchange="main()">
+              <option value="All">All</option>
+              <option value="Beginner">Beginner</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Advanced">Advanced</option>
+            </select> 
+ <p>
+   Double click the recipes to expand them with further information! <br>
+   If no recipes appear, try different time and difficulties!
+      </p>
+    <div id="recipe1">
+      <button id="recipe_synopsis1" type="button" onclick="revealRecipe(this.id)" class="collapsible_button"></button>
+      <div class="collapsible_content" id="collapsible1">
+        <img src=" " width="200" height="200" id="recipe_img1" class="recipe_img">
+        <p id="recipe_full1" class="content"></p>
+      </div>
+    </div>
+    <div id="recipe2">
+      <button id="recipe_synopsis2" type="button" onclick="revealRecipe(this.id)" class="collapsible_button"></button>
+      <div class="collapsible_content" id="collabsible2">
+        <img src=" " width="200" height="200" id="recipe_img2" class="recipe_img">
+        <p id="recipe_full2" class="content"></p>
+      </div>
+    </div>
+      <div id="recipe3">
+      <button id="recipe_synopsis3" type="button" onclick="revealRecipe(this.id)" class="collapsible_button"></button>
+      <div class="collapsible_content" id="collapsible3">
+        <img src=" " width="200" height="200" id="recipe_img3" class="recipe_img">
+        <p id="recipe_full3" class="content"></p>
+      </div>
+    </div>
+      <div id="recipe4">
+      <button id="recipe_synopsis4" type="button" onclick="revealRecipe(this.id)" class="collapsible_button"></button>
+      <div class="collapsible_content" id="collapsible4">
+        <img src=" " width="200" height="200" id="recipe_img4" class="recipe_img">
+        <p id="recipe_full4" class="content"></p>
+      </div>
+    </div>
+      <div id="recipe5">
+      <button id="recipe_synopsis5" type="button" onclick="revealRecipe(this.id)" class="collapsible_button"></button>
+      <div class="collapsible_content" id="collapsible5">
+        <img src=" " width="200" height="200" id="recipe_img5" class="recipe_img">
+        <p id="recipe_full5" class="content"></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

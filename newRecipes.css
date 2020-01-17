@@ -1,0 +1,62 @@
+.title {
+  text-align: center;
+  font-family: Didot, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  color: #F85C50;
+}
+.instruction {
+  text-align: center;
+  font-family: Didot, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #116315;
+}
+.detail {
+  text-align: center;
+  font-family: Didot, serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+  color: grey;
+}
+body {
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+input {
+  text-align: center;
+  outline-style: none;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 5px 5px;
+  width: 400px;
+  font-size: 24px;
+}
+button {
+  background-color: #FBCEB5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 30px 5px;
+  border-radius: 50px;
+}
+select {
+  outline-style: none;
+  border: 1px solid #ccc;
+  padding: 5px 5px;
+  width: 200px;
+  font-size: 24px;
+  border-radius: 50px;
+  font-family: Didot, serif;
+}
+.congrats{
+  display:none;
+}

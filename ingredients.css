@@ -1,0 +1,92 @@
+.title {
+  text-align: left;
+  font-family: Didot, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40pt;
+  color: tan;
+}
+
+.instruction {
+  text-align: left;
+  font-family: Didot, serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20pt;
+  color: grey;
+}
+
+.detail {
+  text-align: left;
+  font-family: Didot, serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30pt;
+  color: grey;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.button {
+  background-color: #FBCEB5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+select {
+  font-style: italic;
+  font-weight: bold;
+  outline-style: none;
+  border: 1px solid #ccc;
+  padding: 5px 5px;
+  width: 400px;
+  font-size: 23px;
+  border-radius: 100px;
+  font-family: Didot, serif;
+  color: grey;
+}
+.collapsible_button{
+  position:relative;
+  right:200px;
+  padding: 0 18px;
+  background-color: transparent;
+  cursor:pointer;
+  padding: 18px;
+  width:100%;
+  text-align:center;
+  float: center;
+  border:0px;
+  transition:0.4s;
+  font-size:25px;
+  font-family:Didot, serif;
+  font-style:italic;
+  color:#414042;
+  
+  
+}
+
+.collapsible_content{
+  padding: 0 18px;
+  background-color: #F1F2F2;
+  display: none;
+  overflow: hidden;
+}
+.recipe_img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height:20%;
+  border: 5px black;
+}
